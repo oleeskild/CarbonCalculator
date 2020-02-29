@@ -1,0 +1,12 @@
+[build]
+    functions = "functions"
+[[redirects]]
+    from="/carbonscore"
+    to="/.netlify/functions/carbonscore"
+    status=200
+
+[[headers]]
+    for="/*"
+
+    [headers.values]
+        access-control-allow-origin = "*"
